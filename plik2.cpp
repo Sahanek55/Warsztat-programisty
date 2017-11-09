@@ -4,16 +4,22 @@
 
 using namespace std;
 void sort(int tab[],int n)
-{int temp=0;
+{int temp=0,k=0;
+	bool stop=false;
 		for(int x=0;x<n;x++)
-	{for(int y=0;y<n-1;y++)
+		if(stop==false)
+	{for(int y=0;y<n-1-x;y++)
 	if(tab[y]>tab[y+1])
 	{temp=tab[y];
 	tab[y]=tab[y+1];
-	tab[y+1]=temp;}	
-	for(int y=0;y<n;y++)
-	cout<<tab[y]<<" ";
-	cout<<endl;
+	tab[y+1]=temp;
+	 k++;}	
+	 if(k==0){
+	 stop=true;
+	cout<<x<<endl;	}
+	 else k=0;
+	 
+
 	}
 	
 }
