@@ -1,0 +1,4 @@
+Suma kontorlna: md5sum genom.txt
+4 linie: 47306 wc genom.txt
+6: grep -c NM_ genom.txt 36064
+
