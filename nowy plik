@@ -1,0 +1,12 @@
+Suma kontorlna: md5sum genom.txt
+4 linie: 47306 wc genom.txt
+5. tabulator
+6: grep -c NM_ genom.txt 36064
+10:grep -n chrY genom.txt | cut -f 2 >chrY_genes.txt
+11: grep -n + genom.txt > genom_plus.txt
+ grep -n - genom.txt > genom_neg.txt
+12: sort -t: -k 3 genom_plus.txt 
+	sort -t: -k 7 genom_plus.txt 
+13:split -b 3491341 -d -a 1 genom.txt Part_ 
+16: grep -n BMP genom.txt | cut -f 2 >BMPs_etc.txt
+
